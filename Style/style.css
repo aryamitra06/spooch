@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #1F1D36;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #2D4263
+}
+
+
+/* <--- index page design ---> */
+
+.index-container{   
+    height: 100vh;
+    background-color: #1F1D36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.index-vector{
+    height: 600px;
+    width: 600px;
+    
+}
+
+.child-2{
+    padding: 30px;
+}
+.index-heading{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    margin: 0px;
+}
+
+.index-sub{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    color: rgba(255, 255, 255, 0.74);
+    margin: 0px;
+    font-weight: lighter;
+}
+
+.login, .signup{
+    background: #38364F;
+    border-radius: 15px;
+    padding: 8px;
+    width: 129px;
+    height: 48px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-right: 8px;
+    margin-top: 25px;
+    border: 3.4px solid #49475e;
+    transition: 0.3s ease-in-out;
+}
+
+.login:focus, .signup:focus{
+    background: #434157;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* login modal  *
+
+
+.loginBtn{
+    background: #38364F;
+    border-radius: 11px;
+    padding: 4px;
+    width: 129px;
+    height: 40px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-right: 8px;
+    margin-top: 25px;
+    border: 1px solid #49475e;
+}
+
+.signupBtn{
+    background: #38364F;
+    border-radius: 11px;
+    padding: 4px;
+    width: 129px;
+    height: 40px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-right: 8px;
+    margin-top: 25px;
+    border: 1px solid #49475e;
+}
+
+
+/*media*/
+
+@media only screen and (max-width: 768px){
+    .child-1{
+        margin-top: 110px;
+    }
+    .child-2{
+        margin-bottom: 100px;
+    }
+    .index-vector{
+        height: 350px;
+        width: 350px;
+    }
+
+    .index-heading{
+        font-size: 45px;
+        margin: 0px;
+    }
+    
+    .index-sub{
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.74);
+        margin: 0px;
+    }
+
+    .login, .signup{
+        padding: 4px;
+        width: 110px;
+        height: 38px;
+    }
+
+
+    .modal-heading{
+        font-size: 20px;
+    }
+    .modal-para{
+        font-size: 13px;
+    }
+
+    .loginBtn, .closeBtn{
+        margin: 6px;
+    }
+
+
+
+    .modal-heading{
+        font-size: 23px;
+    }
+
+    .signupBtn, .closeBtn{
+        margin: 6px;
+    }
+}
+
+
+/* <--- notes page design ---> */
+
+body{
+    background-color: #1F1D36;
+    height:100vh;
+}
+
+
+.notes-nav{
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.brand-name{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+.nav-elems{
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.add-note, .user{
+    height: 50px;
+    width: 50px;
+    background-color: #38364F;
+    border-radius: 12px;
+    margin: 10px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+}
+.search{
+    height: 50px;
+    width: 200px;
+    background-color: #38364F;
+    border-radius: 12px;
+    margin: 10px;
+    display: flex;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+i{
+    color: white;
+    font-size: 20px;
+}
+
+#search-field{
+    height: 80%;
+    width: 70%;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    color: rgba(240, 248, 255, 0.226);
+    padding: 12px;
+    transition: 0.3s ease-in-out;
+}
+
+#search-field:focus{
+    height: 80%;
+    width: 75%;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    color: rgba(240, 248, 255, 0.226);
+    padding: 12px;
+}
+
+.fa-search{
+    cursor: pointer;
+}
+
+strong{
+    cursor: pointer;
+}
+
+.all-notes{
+    height:fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.note{
+    height: 250px;
+    width: 250px;
+    background-color: #ECB365;
+    border-radius: 16px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.note:hover{
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 1px 7px 4px rgba(0, 0, 0, 0.29);
+}
+
+.note-body{
+    height: 200px;
+}
+
+.note-title{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.note-footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.note-date{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.note-buttons{
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.fa-trash{
+    color: rgb(163, 10, 10);
+    transition: 0.1s ease-in-out;
+}
+
+.fa-edit{
+    color: rgb(6, 83, 6);
+    transition: 0.1s ease-in-out;
+}
+
+.fa-edit:hover, .fa-trash:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+}
+
+.greetings-title{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.74);
+    text-align: center;
+}
+
+
+/* view note modal  */
+
+#viewNote{
+    width: 800px;
+    height: 400px;
+    overflow-y : auto;
+    padding: 20px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    visibility:visible;
+    opacity: 1;
+    transition: 0.5s;
+    border-radius: 18px;
+    background: #2D4263;
+}
+
+.viewnote-center{
+    display: flex;
+    justify-content: center;
+}
+
+.notes-body#blur.active{
+    transition: 0.3s;
+    filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.modal-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-back, .modal-download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #415676;
+    height: 50px;
+    width: 50px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.modal_body{
+    padding: 2rem;
+}
+.modal_title{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+
+}
+
+.modal-date{
+    color: rgba(255, 255, 255, 0.616);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+} 
+
+.modal-desc{
+    color: rgba(255, 255, 255, 0.815);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+} 
+
+
+/* add note modal */
+
+#newNoteModal{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 400px;
+    overflow-y : auto;
+    padding: 20px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 13px;
+    background: #2D4263;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+
+}
+
+
+#newNoteModal.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.modal-input-title{
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    height: 60px;
+    width: 100%;
+    resize: none;
+
+}
+.modal-input-desc{
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    height: 150px;
+    width: 100%;
+    resize: none;
+}
+
+.modal-save{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #415676;
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.modal-save > button{
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* edit note modal */
+
+#editNoteModal{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 400px;
+    overflow-y : auto;
+    padding: 20px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 13px;
+    background: #2D4263;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+
+}
+
+
+#editNoteModal.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nonoteimage{
+    margin-top: 70px;
+    height: 20rem;
+}
+
+.nonotepara{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    user-select: none;
+}
+
+/* media for notes.html*/
+
+.search-btn-hide{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 768px){
+    .brand-name{
+        font-size: 32px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        margin-right: 200px;
+        text-align: left;
+    }
+    .add-note, .search, .user{
+        height: 40px;
+    }
+    .note{
+        margin: 10px;
+        height: 220px;
+        width: 220px;
+    }
+    .note-body{
+        height: 170px;
+    }
+    .note-date{
+        font-size: 10px;
+    }
+    .fa-edit, .fa-trash{
+        font-size: 20px;
+    }
+    .greetings-title{
+        font-size: 20px;
+    }
+
+    #viewNote, #newNoteModal, #editNoteModal{
+        width: 300px;
+    }
+
+    .modal_title, .modal-input-title{
+        font-size: 25px;
+    }
+    .modal-desc, .modal-input-desc{
+        font-size: 18px;
+    }
+    .modal_body{
+        padding: 5px;
+    }
+    .nonoteimage{
+        margin-top: 70px;
+        height: 10rem;
+    }
+    
+    .nonotepara{
+        font-size: 15px;
+    }
+}
